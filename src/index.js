@@ -14,7 +14,7 @@ fastify.get('/:key/:value', (req, res) => {
 })
 
 // Run the server!
-fastify.listen(3000, (err) => {
+fastify.listen(3000, '0.0.0.0', (err) => {
   if (err) {
     fastify.log.error(err)
     process.exit(1)
